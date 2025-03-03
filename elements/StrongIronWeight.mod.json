@@ -1,0 +1,22 @@
+{
+  "_fv": 73,
+  "_type": "potion",
+  "definition": {
+    "potionName": "Potion of Iron Weight",
+    "splashName": "Splash Potion of Iron Weight",
+    "lingeringName": "Lingering Potion of Iron Weight",
+    "arrowName": "Arrow of Iron Weight",
+    "effects": [
+      {
+        "effect": {
+          "value": "CUSTOM:HeavyBody"
+        },
+        "duration": 600,
+        "infinite": false,
+        "amplifier": 1,
+        "ambient": false,
+        "showParticles": true
+      }
+    ]
+  }
+}

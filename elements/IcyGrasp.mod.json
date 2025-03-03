@@ -1,0 +1,22 @@
+{
+  "_fv": 73,
+  "_type": "potion",
+  "definition": {
+    "potionName": "Potion of Icy Grasp",
+    "splashName": "Splash Potion of Icy Grasp",
+    "lingeringName": "Lingering Potion of Icy Grasp",
+    "arrowName": "Arrow of Icy Grasp",
+    "effects": [
+      {
+        "effect": {
+          "value": "CUSTOM:FreezingHit"
+        },
+        "duration": 3600,
+        "infinite": false,
+        "amplifier": 0,
+        "ambient": false,
+        "showParticles": true
+      }
+    ]
+  }
+}

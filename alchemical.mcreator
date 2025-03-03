@@ -1,29 +1,465 @@
 {
-  "mod_elements": [],
+  "mod_elements": [
+    {
+      "name": "BurningHit",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "burning_hit",
+      "metadata": {
+        "files": [
+          "src/main/java/net/alchemical/potion/BurningHitMobEffect.java"
+        ]
+      },
+      "path": "~/PotionEffects"
+    },
+    {
+      "name": "FieryBlows",
+      "type": "potion",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fiery_blows",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Potions"
+    },
+    {
+      "name": "BurningHitHitsTarget",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "burning_hit_hits_target",
+      "metadata": {
+        "files": [
+          "src/main/java/net/alchemical/procedures/BurningHitHitsTargetProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PotionEffects"
+    },
+    {
+      "name": "FreezingHit",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "freezing_hit",
+      "metadata": {
+        "files": [
+          "src/main/java/net/alchemical/potion/FreezingHitMobEffect.java"
+        ]
+      },
+      "path": "~/PotionEffects"
+    },
+    {
+      "name": "FreezingHitHitsTarget",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "freezing_hit_hits_target",
+      "metadata": {
+        "files": [
+          "src/main/java/net/alchemical/procedures/FreezingHitHitsTargetProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PotionEffects"
+    },
+    {
+      "name": "FieryBlowsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fiery_blows_recipe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/alchemical/recipe/brewing/FieryBlowsRecipeBrewingRecipe.java"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "LongFieryBlows",
+      "type": "potion",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "long_fiery_blows",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Potions"
+    },
+    {
+      "name": "StrongFieryBlows",
+      "type": "potion",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "strong_fiery_blows",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Potions"
+    },
+    {
+      "name": "IcyGrasp",
+      "type": "potion",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "icy_grasp",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Potions"
+    },
+    {
+      "name": "BurningDuration",
+      "type": "attribute",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "burning_duration",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/PotionEffects"
+    },
+    {
+      "name": "LongFieryBlowsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "long_fiery_blows_recipe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/alchemical/recipe/brewing/LongFieryBlowsRecipeBrewingRecipe.java"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "StrongFieryBlowsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "strong_fiery_blows_recipe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/alchemical/recipe/brewing/StrongFieryBlowsRecipeBrewingRecipe.java"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "FreezingDuration",
+      "type": "attribute",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "freezing_duration",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/PotionEffects"
+    },
+    {
+      "name": "LongIcyGrasp",
+      "type": "potion",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "long_icy_grasp",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Potions"
+    },
+    {
+      "name": "StrongIcyGrasp",
+      "type": "potion",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "strong_icy_grasp",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Potions"
+    },
+    {
+      "name": "IcyGraspRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "icy_grasp_recipe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/alchemical/recipe/brewing/IcyGraspRecipeBrewingRecipe.java"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "LongIcyGraspRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "long_icy_grasp_recipe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/alchemical/recipe/brewing/LongIcyGraspRecipeBrewingRecipe.java"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "StrongIcyGraspRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "strong_icy_grasp_recipe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/alchemical/recipe/brewing/StrongIcyGraspRecipeBrewingRecipe.java"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "HeavyBody",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heavy_body",
+      "metadata": {
+        "files": [
+          "src/main/java/net/alchemical/potion/HeavyBodyMobEffect.java"
+        ]
+      },
+      "path": "~/PotionEffects"
+    },
+    {
+      "name": "IronWeight",
+      "type": "potion",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_weight",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Potions"
+    },
+    {
+      "name": "StrongIronWeight",
+      "type": "potion",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "strong_iron_weight",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Potions"
+    },
+    {
+      "name": "IronWeightRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_weight_recipe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/alchemical/recipe/brewing/IronWeightRecipeBrewingRecipe.java"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Resistance",
+      "type": "potion",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "resistance",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Potions"
+    },
+    {
+      "name": "LongResistance",
+      "type": "potion",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "long_resistance",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Potions"
+    },
+    {
+      "name": "StrongResistance",
+      "type": "potion",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "strong_resistance",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Potions"
+    },
+    {
+      "name": "StrongIronWeightRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "strong_iron_weight_recipe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/alchemical/recipe/brewing/StrongIronWeightRecipeBrewingRecipe.java"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "ResistanceRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "resistance_recipe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/alchemical/recipe/brewing/ResistanceRecipeBrewingRecipe.java"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "LongResistanceRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "long_resistance_recipe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/alchemical/recipe/brewing/LongResistanceRecipeBrewingRecipe.java"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "StrongResistanceRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "strong_resistance_recipe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/alchemical/recipe/brewing/StrongResistanceRecipeBrewingRecipe.java"
+        ]
+      },
+      "path": "~/Recipes"
+    }
+  ],
   "variable_elements": [],
   "sound_elements": [],
   "tag_elements": {},
   "tab_element_order": {},
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "item.minecraft.potion.effect.icy_grasp": "Potion of Icy Grasp",
+      "item.minecraft.tipped_arrow.effect.long_icy_grasp": "Arrow of Icy Grasp",
+      "item.minecraft.potion.effect.long_icy_grasp": "Potion of Icy Grasp",
+      "item.minecraft.tipped_arrow.effect.long_fiery_blows": "Arrow of Fiery Blows",
+      "item.minecraft.splash_potion.effect.iron_weight": "Splash Potion of Iron Weight",
+      "item.minecraft.potion.effect.strong_iron_weight": "Potion of Iron Weight",
+      "item.minecraft.potion.effect.long_resistance": "Potion of Resistance",
+      "effect.alchemical.freezing_hit": "Freezing Hit",
+      "item.minecraft.splash_potion.effect.long_fiery_blows": "Splash Potion of Fiery Blows",
+      "item.minecraft.splash_potion.effect.resistance": "Splash Potion of Resistance",
+      "item.minecraft.splash_potion.effect.icy_grasp": "Splash Potion of Icy Grasp",
+      "item.minecraft.lingering_potion.effect.strong_iron_weight": "Lingering Potion of Iron Weight",
+      "item.minecraft.tipped_arrow.effect.strong_iron_weight": "Arrow of Iron Weight",
+      "item.minecraft.lingering_potion.effect.strong_resistance": "Lingering Potion of Resistance",
+      "item.minecraft.lingering_potion.effect.long_icy_grasp": "Lingering Potion of Icy Grasp",
+      "item.minecraft.tipped_arrow.effect.resistance": "Arrow of Resistance",
+      "effect.alchemical.burning_hit": "Burning Hit",
+      "item.minecraft.potion.effect.fiery_blows": "Potion of Fiery Blows",
+      "item.minecraft.lingering_potion.effect.strong_fiery_blows": "Lingering Potion of Fiery Blows",
+      "item.minecraft.splash_potion.effect.long_resistance": "Splash Potion of Resistance",
+      "item.minecraft.lingering_potion.effect.strong_icy_grasp": "Lingering Potion of Icy Grasp",
+      "item.minecraft.splash_potion.effect.strong_iron_weight": "Splash Potion of Iron Weight",
+      "attribute.alchemical.burning_duration": "Burning Duration",
+      "item.minecraft.lingering_potion.effect.long_resistance": "Lingering Potion of Resistance",
+      "item.minecraft.potion.effect.strong_resistance": "Potion of Resistance",
+      "item.minecraft.tipped_arrow.effect.strong_icy_grasp": "Arrow of Icy Grasp",
+      "item.minecraft.lingering_potion.effect.fiery_blows": "Lingering Potion of Fiery Blows",
+      "item.minecraft.tipped_arrow.effect.strong_resistance": "Arrow of Resistance",
+      "item.minecraft.potion.effect.strong_icy_grasp": "Potion of Icy Grasp",
+      "item.minecraft.lingering_potion.effect.icy_grasp": "Lingering Potion of Icy Grasp",
+      "item.minecraft.splash_potion.effect.strong_fiery_blows": "Splash Potion of Fiery Blows",
+      "item.minecraft.splash_potion.effect.strong_icy_grasp": "Splash Potion of Icy Grasp",
+      "item.minecraft.lingering_potion.effect.resistance": "Lingering Potion of Resistance",
+      "item.minecraft.lingering_potion.effect.iron_weight": "Lingering Potion of Iron Weight",
+      "attribute.alchemical.freezing_duration": "Freezing Duration",
+      "item.minecraft.lingering_potion.effect.long_fiery_blows": "Lingering Potion of Fiery Blows",
+      "item.minecraft.splash_potion.effect.fiery_blows": "Splash Potion of Fiery Blows",
+      "item.minecraft.potion.effect.strong_fiery_blows": "Potion of Fiery Blows",
+      "item.minecraft.tipped_arrow.effect.icy_grasp": "Arrow of Icy Grasp",
+      "item.minecraft.tipped_arrow.effect.iron_weight": "Arrow of Iron Weight",
+      "item.minecraft.tipped_arrow.effect.long_resistance": "Arrow of Resistance",
+      "item.minecraft.splash_potion.effect.long_icy_grasp": "Splash Potion of Icy Grasp",
+      "item.minecraft.potion.effect.iron_weight": "Potion of Iron Weight",
+      "effect.alchemical.heavy_body": "Heavy Body",
+      "item.minecraft.potion.effect.resistance": "Potion of Resistance",
+      "item.minecraft.tipped_arrow.effect.strong_fiery_blows": "Arrow of Fiery Blows",
+      "item.minecraft.potion.effect.long_fiery_blows": "Potion of Fiery Blows",
+      "item.minecraft.tipped_arrow.effect.fiery_blows": "Arrow of Fiery Blows",
+      "item.minecraft.splash_potion.effect.strong_resistance": "Splash Potion of Resistance"
+    }
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "PotionEffects",
+        "children": []
+      },
+      {
+        "name": "Potions",
+        "children": []
+      },
+      {
+        "name": "Recipes",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "alchemical",
     "modName": "Alchemical",
     "version": "1.0.0",
-    "author": "User, MCreator",
+    "author": "Vuserr",
     "websiteURL": "https://mcreator.net",
-    "license": "Not specified",
+    "license": "All Rights Reserved",
     "serverSideOnly": false,
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "neoforge-1.21.1",
+    "credits": "Made by Vuserr",
     "modElementsPackage": "net.alchemical"
   },
   "mcreatorVersion": 202400452410

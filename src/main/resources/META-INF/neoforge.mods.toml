@@ -1,14 +1,14 @@
 modLoader="javafml"
 loaderVersion="[4,)"
-license="Not specified"
+license="All Rights Reserved"
 
 [[mods]]
 modId="alchemical"
 version="1.0.0"
 displayName="Alchemical"
 displayURL="https://mcreator.net"
-credits="Created using mod maker MCreator - https://mcreator.net/about"
-authors="User, MCreator"
+credits="Made by Vuserr"
+authors="Vuserr"
 
 # Start of user code block mod configuration
 # End of user code block mod configuration

@@ -1,0 +1,22 @@
+{
+  "_fv": 73,
+  "_type": "potion",
+  "definition": {
+    "potionName": "Potion of Fiery Blows",
+    "splashName": "Splash Potion of Fiery Blows",
+    "lingeringName": "Lingering Potion of Fiery Blows",
+    "arrowName": "Arrow of Fiery Blows",
+    "effects": [
+      {
+        "effect": {
+          "value": "CUSTOM:BurningHit"
+        },
+        "duration": 3600,
+        "infinite": false,
+        "amplifier": 0,
+        "ambient": false,
+        "showParticles": true
+      }
+    ]
+  }
+}
