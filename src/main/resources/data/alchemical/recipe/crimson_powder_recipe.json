@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "alchemical:crimson_powder"
+    },
+    {
+      "tag": "alchemical:pestles"
+    }
+  ],
+  "result": {
+    "id": "alchemical:crimson_powder",
+    "count": 1
+  }
+}

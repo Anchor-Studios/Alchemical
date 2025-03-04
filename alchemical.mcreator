@@ -84,19 +84,6 @@
       "path": "~/PotionEffects"
     },
     {
-      "name": "FieryBlowsRecipe",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fiery_blows_recipe",
-      "metadata": {
-        "files": [
-          "src/main/java/net/alchemical/recipe/brewing/FieryBlowsRecipeBrewingRecipe.java"
-        ]
-      },
-      "path": "~/Recipes"
-    },
-    {
       "name": "LongFieryBlows",
       "type": "potion",
       "compiles": true,
@@ -141,32 +128,6 @@
       "path": "~/PotionEffects"
     },
     {
-      "name": "LongFieryBlowsRecipe",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "long_fiery_blows_recipe",
-      "metadata": {
-        "files": [
-          "src/main/java/net/alchemical/recipe/brewing/LongFieryBlowsRecipeBrewingRecipe.java"
-        ]
-      },
-      "path": "~/Recipes"
-    },
-    {
-      "name": "StrongFieryBlowsRecipe",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "strong_fiery_blows_recipe",
-      "metadata": {
-        "files": [
-          "src/main/java/net/alchemical/recipe/brewing/StrongFieryBlowsRecipeBrewingRecipe.java"
-        ]
-      },
-      "path": "~/Recipes"
-    },
-    {
       "name": "FreezingDuration",
       "type": "attribute",
       "compiles": true,
@@ -198,45 +159,6 @@
         "files": []
       },
       "path": "~/Potions"
-    },
-    {
-      "name": "IcyGraspRecipe",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "icy_grasp_recipe",
-      "metadata": {
-        "files": [
-          "src/main/java/net/alchemical/recipe/brewing/IcyGraspRecipeBrewingRecipe.java"
-        ]
-      },
-      "path": "~/Recipes"
-    },
-    {
-      "name": "LongIcyGraspRecipe",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "long_icy_grasp_recipe",
-      "metadata": {
-        "files": [
-          "src/main/java/net/alchemical/recipe/brewing/LongIcyGraspRecipeBrewingRecipe.java"
-        ]
-      },
-      "path": "~/Recipes"
-    },
-    {
-      "name": "StrongIcyGraspRecipe",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "strong_icy_grasp_recipe",
-      "metadata": {
-        "files": [
-          "src/main/java/net/alchemical/recipe/brewing/StrongIcyGraspRecipeBrewingRecipe.java"
-        ]
-      },
-      "path": "~/Recipes"
     },
     {
       "name": "HeavyBody",
@@ -274,19 +196,6 @@
       "path": "~/Potions"
     },
     {
-      "name": "IronWeightRecipe",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "iron_weight_recipe",
-      "metadata": {
-        "files": [
-          "src/main/java/net/alchemical/recipe/brewing/IronWeightRecipeBrewingRecipe.java"
-        ]
-      },
-      "path": "~/Recipes"
-    },
-    {
       "name": "Resistance",
       "type": "potion",
       "compiles": true,
@@ -318,58 +227,6 @@
         "files": []
       },
       "path": "~/Potions"
-    },
-    {
-      "name": "StrongIronWeightRecipe",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "strong_iron_weight_recipe",
-      "metadata": {
-        "files": [
-          "src/main/java/net/alchemical/recipe/brewing/StrongIronWeightRecipeBrewingRecipe.java"
-        ]
-      },
-      "path": "~/Recipes"
-    },
-    {
-      "name": "ResistanceRecipe",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "resistance_recipe",
-      "metadata": {
-        "files": [
-          "src/main/java/net/alchemical/recipe/brewing/ResistanceRecipeBrewingRecipe.java"
-        ]
-      },
-      "path": "~/Recipes"
-    },
-    {
-      "name": "LongResistanceRecipe",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "long_resistance_recipe",
-      "metadata": {
-        "files": [
-          "src/main/java/net/alchemical/recipe/brewing/LongResistanceRecipeBrewingRecipe.java"
-        ]
-      },
-      "path": "~/Recipes"
-    },
-    {
-      "name": "StrongResistanceRecipe",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "strong_resistance_recipe",
-      "metadata": {
-        "files": [
-          "src/main/java/net/alchemical/recipe/brewing/StrongResistanceRecipeBrewingRecipe.java"
-        ]
-      },
-      "path": "~/Recipes"
     },
     {
       "name": "Lifesteal",
@@ -452,45 +309,6 @@
       "path": "~/PotionEffects"
     },
     {
-      "name": "VampiricRecipe",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "vampiric_recipe",
-      "metadata": {
-        "files": [
-          "src/main/java/net/alchemical/recipe/brewing/VampiricRecipeBrewingRecipe.java"
-        ]
-      },
-      "path": "~/Recipes"
-    },
-    {
-      "name": "LongVampiricRecipe",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "long_vampiric_recipe",
-      "metadata": {
-        "files": [
-          "src/main/java/net/alchemical/recipe/brewing/LongVampiricRecipeBrewingRecipe.java"
-        ]
-      },
-      "path": "~/Recipes"
-    },
-    {
-      "name": "StrongVampiricRecipe",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "strong_vampiric_recipe",
-      "metadata": {
-        "files": [
-          "src/main/java/net/alchemical/recipe/brewing/StrongVampiricRecipeBrewingRecipe.java"
-        ]
-      },
-      "path": "~/Recipes"
-    },
-    {
       "name": "CrimsonPowder",
       "type": "item",
       "compiles": true,
@@ -514,12 +332,246 @@
         "files": []
       },
       "path": "~/CreativeTabs"
+    },
+    {
+      "name": "WoodenPestle",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wooden_pestle",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/alchemical/models/item/wooden_pestle.json",
+          "src/main/java/net/alchemical/item/WoodenPestleItem.java"
+        ]
+      },
+      "path": "~/Tools"
+    },
+    {
+      "name": "StonePestle",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stone_pestle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/alchemical/item/StonePestleItem.java",
+          "src/main/resources/assets/alchemical/models/item/stone_pestle.json"
+        ]
+      },
+      "path": "~/Tools"
+    },
+    {
+      "name": "IronPestle",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_pestle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/alchemical/item/IronPestleItem.java",
+          "src/main/resources/assets/alchemical/models/item/iron_pestle.json"
+        ]
+      },
+      "path": "~/Tools"
+    },
+    {
+      "name": "GoldenPestle",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "golden_pestle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/alchemical/item/GoldenPestleItem.java",
+          "src/main/resources/assets/alchemical/models/item/golden_pestle.json"
+        ]
+      },
+      "path": "~/Tools"
+    },
+    {
+      "name": "DiamondPestle",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diamond_pestle",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/alchemical/models/item/diamond_pestle.json",
+          "src/main/java/net/alchemical/item/DiamondPestleItem.java"
+        ]
+      },
+      "path": "~/Tools"
+    },
+    {
+      "name": "NetheritePestle",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherite_pestle",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/alchemical/models/item/netherite_pestle.json",
+          "src/main/java/net/alchemical/item/NetheritePestleItem.java"
+        ]
+      },
+      "path": "~/Tools"
+    },
+    {
+      "name": "WoodenPestleRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wooden_pestle_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alchemical/recipe/wooden_pestle_recipe.json"
+        ]
+      },
+      "path": "~/Recipes/PestleRecipes/ToolRecipes"
+    },
+    {
+      "name": "StonePestleRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stone_pestle_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alchemical/recipe/stone_pestle_recipe.json"
+        ]
+      },
+      "path": "~/Recipes/PestleRecipes/ToolRecipes"
+    },
+    {
+      "name": "GoldenPestleRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "golden_pestle_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alchemical/recipe/golden_pestle_recipe.json"
+        ]
+      },
+      "path": "~/Recipes/PestleRecipes/ToolRecipes"
+    },
+    {
+      "name": "IronPestleRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_pestle_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alchemical/recipe/iron_pestle_recipe.json"
+        ]
+      },
+      "path": "~/Recipes/PestleRecipes/ToolRecipes"
+    },
+    {
+      "name": "DiamondPestleRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diamond_pestle_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alchemical/recipe/diamond_pestle_recipe.json"
+        ]
+      },
+      "path": "~/Recipes/PestleRecipes/ToolRecipes"
+    },
+    {
+      "name": "NetheritePestleRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherite_pestle_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alchemical/recipe/netherite_pestle_recipe.json"
+        ]
+      },
+      "path": "~/Recipes/PestleRecipes/ToolRecipes"
+    },
+    {
+      "name": "CrimsonPowderRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crimson_powder_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alchemical/recipe/crimson_powder_recipe.json"
+        ]
+      },
+      "path": "~/Recipes/PestleRecipes"
+    },
+    {
+      "name": "AshPowder",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ash_powder",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/alchemical/models/item/ash_powder.json",
+          "src/main/java/net/alchemical/item/AshPowderItem.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "AshPowderRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ash_powder_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alchemical/recipe/ash_powder_recipe.json"
+        ]
+      },
+      "path": "~/Recipes/PestleRecipes"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
-  "tag_elements": {},
-  "tab_element_order": {},
+  "tag_elements": {
+    "ITEMS:mod:crimson_powder": [
+      "Items.REDSTONE",
+      "Blocks.DOUBLE_PLANT#4",
+      "Blocks.RED_FLOWER#0",
+      "Blocks.RED_FLOWER#4"
+    ],
+    "ITEMS:minecraft:brewable": [
+      "CUSTOM:CrimsonPowder",
+      "CUSTOM:AshPowder"
+    ],
+    "ITEMS:minecraft:stone_crafting_materials": [],
+    "ITEMS:mod:pestles": [
+      "CUSTOM:WoodenPestle",
+      "CUSTOM:StonePestle",
+      "CUSTOM:IronPestle",
+      "CUSTOM:GoldenPestle",
+      "CUSTOM:DiamondPestle",
+      "CUSTOM:NetheritePestle"
+    ],
+    "ITEMS:minecraft:coals": []
+  },
+  "tab_element_order": {
+    "CUSTOM:Alchemical": [
+      "WoodenPestle",
+      "StonePestle",
+      "IronPestle",
+      "GoldenPestle",
+      "DiamondPestle",
+      "NetheritePestle",
+      "CrimsonPowder",
+      "AshPowder"
+    ]
+  },
   "language_map": {
     "en_us": {
       "item.minecraft.potion.effect.icy_grasp": "Potion of Icy Grasp",
@@ -540,13 +592,16 @@
       "item.minecraft.tipped_arrow.effect.long_vampiric": "Vampiric Arrow",
       "item.minecraft.lingering_potion.effect.long_icy_grasp": "Lingering Potion of Icy Grasp",
       "item.minecraft.tipped_arrow.effect.resistance": "Arrow of Resistance",
+      "item.alchemical.diamond_pestle": "Diamond Pestle",
       "effect.alchemical.burning_hit": "Burning Hit",
+      "item.alchemical.iron_pestle": "Iron Pestle",
       "item.minecraft.potion.effect.fiery_blows": "Potion of Fiery Blows",
       "item.minecraft.lingering_potion.effect.strong_fiery_blows": "Lingering Potion of Fiery Blows",
       "item.minecraft.splash_potion.effect.long_resistance": "Splash Potion of Resistance",
       "item_group.alchemical.alchemical": "Alchemical",
       "item.minecraft.lingering_potion.effect.strong_icy_grasp": "Lingering Potion of Icy Grasp",
       "item.minecraft.splash_potion.effect.strong_iron_weight": "Splash Potion of Iron Weight",
+      "item.alchemical.golden_pestle": "Golden Pestle",
       "item.minecraft.lingering_potion.effect.long_vampiric": "Vampiric Lingering Potion",
       "attribute.alchemical.burning_duration": "Burning Duration",
       "item.minecraft.lingering_potion.effect.long_resistance": "Lingering Potion of Resistance",
@@ -554,6 +609,7 @@
       "item.minecraft.tipped_arrow.effect.strong_icy_grasp": "Arrow of Icy Grasp",
       "item.minecraft.splash_potion.effect.strong_vampiric": "Vampiric Splash Potion",
       "item.minecraft.lingering_potion.effect.vampiric": "Vampiric Lingering Potion",
+      "item.alchemical.netherite_pestle": "Netherite Pestle",
       "item.minecraft.lingering_potion.effect.fiery_blows": "Lingering Potion of Fiery Blows",
       "item.minecraft.lingering_potion.effect.strong_vampiric": "Vampiric Lingering Potion",
       "item.minecraft.tipped_arrow.effect.strong_resistance": "Arrow of Resistance",
@@ -576,11 +632,14 @@
       "item.minecraft.tipped_arrow.effect.icy_grasp": "Arrow of Icy Grasp",
       "item.minecraft.tipped_arrow.effect.iron_weight": "Arrow of Iron Weight",
       "item.minecraft.tipped_arrow.effect.long_resistance": "Arrow of Resistance",
+      "item.alchemical.wooden_pestle": "Wooden Pestle",
       "item.minecraft.splash_potion.effect.long_icy_grasp": "Splash Potion of Icy Grasp",
       "item.minecraft.potion.effect.iron_weight": "Potion of Iron Weight",
       "effect.alchemical.heavy_body": "Heavy Body",
       "item.minecraft.potion.effect.resistance": "Potion of Resistance",
       "item.minecraft.potion.effect.long_vampiric": "Vampiric Potion",
+      "item.alchemical.stone_pestle": "Stone Pestle",
+      "item.alchemical.ash_powder": "Ash Powder",
       "item.minecraft.splash_potion.effect.long_vampiric": "Vampiric Splash Potion",
       "item.minecraft.tipped_arrow.effect.strong_vampiric": "Vampiric Arrow",
       "item.minecraft.tipped_arrow.effect.strong_fiery_blows": "Arrow of Fiery Blows",
@@ -602,7 +661,21 @@
       },
       {
         "name": "Recipes",
-        "children": []
+        "children": [
+          {
+            "name": "PestleRecipes",
+            "children": [
+              {
+                "name": "ToolRecipes",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "PotionRecipes",
+            "children": []
+          }
+        ]
       },
       {
         "name": "Items",
@@ -611,13 +684,17 @@
       {
         "name": "CreativeTabs",
         "children": []
+      },
+      {
+        "name": "Tools",
+        "children": []
       }
     ]
   },
   "workspaceSettings": {
     "modid": "alchemical",
     "modName": "Alchemical",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "author": "Vuserr",
     "websiteURL": "https://mcreator.net",
     "license": "All Rights Reserved",
@@ -625,9 +702,7 @@
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
-    "mcreatorDependencies": [
-      "jei"
-    ],
+    "mcreatorDependencies": [],
     "currentGenerator": "neoforge-1.21.1",
     "credits": "Made by Vuserr",
     "modElementsPackage": "net.alchemical"

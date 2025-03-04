@@ -3,11 +3,11 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "crimson_powder",
+    "texture": "ash_powder",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "Crimson Powder",
+    "name": "Ash Powder",
     "rarity": "COMMON",
     "creativeTabs": [
       {

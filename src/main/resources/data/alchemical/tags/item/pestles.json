@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "alchemical:wooden_pestle",
+    "alchemical:stone_pestle",
+    "alchemical:iron_pestle",
+    "alchemical:golden_pestle",
+    "alchemical:diamond_pestle",
+    "alchemical:netherite_pestle"
+  ]
+}

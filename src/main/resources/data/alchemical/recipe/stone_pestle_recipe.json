@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "pestle",
+  "category": "equipment",
+  "pattern": [
+    "  a",
+    "ab ",
+    "aa "
+  ],
+  "key": {
+    "a": {
+      "tag": "minecraft:stone_crafting_materials"
+    },
+    "b": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "id": "alchemical:stone_pestle",
+    "count": 1
+  }
+}

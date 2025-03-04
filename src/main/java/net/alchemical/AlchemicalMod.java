@@ -18,6 +18,7 @@ import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
 import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.alchemical.init.AlchemicalModTabs;
 import net.alchemical.init.AlchemicalModPotions;
 import net.alchemical.init.AlchemicalModMobEffects;
 import net.alchemical.init.AlchemicalModItems;
@@ -42,6 +43,8 @@ public class AlchemicalMod {
 		modEventBus.addListener(this::registerNetworking);
 
 		AlchemicalModItems.REGISTRY.register(modEventBus);
+
+		AlchemicalModTabs.REGISTRY.register(modEventBus);
 
 		AlchemicalModPotions.REGISTRY.register(modEventBus);
 		AlchemicalModMobEffects.REGISTRY.register(modEventBus);

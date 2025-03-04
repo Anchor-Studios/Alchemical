@@ -1,0 +1,38 @@
+{
+  "_fv": 73,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Special",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "diamond_pestle",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "name": "Diamond Pestle",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "creativeTabs": [
+      {
+        "value": "TOOLS"
+      },
+      {
+        "value": "CUSTOM:Alchemical"
+      }
+    ],
+    "efficiency": 0.0,
+    "attackSpeed": 1.0,
+    "enchantability": 0,
+    "damageVsEntity": 0.5,
+    "usageCount": 1024,
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [],
+    "immuneToFire": false,
+    "blockDropsTier": "WOOD",
+    "blocksAffected": [],
+    "stayInGridWhenCrafting": true,
+    "damageOnCrafting": true
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "pestle",
+  "category": "equipment",
+  "pattern": [
+    "  a",
+    "ab ",
+    "aa "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:diamond"
+    },
+    "b": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "id": "alchemical:diamond_pestle",
+    "count": 1
+  }
+}

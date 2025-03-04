@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:redstone",
+    "minecraft:rose_bush",
+    "minecraft:poppy",
+    "minecraft:red_tulip"
+  ]
+}

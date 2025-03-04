@@ -29,12 +29,6 @@ displayTest="IGNORE_SERVER_VERSION"
     side="BOTH"
 
 
-[[dependencies.alchemical]]
-    modId="jei"
-    type="optional"
-    versionRange="[0,)"
-    ordering="NONE"
-    side="BOTH"
 
 
 # Start of user code block dependencies configuration

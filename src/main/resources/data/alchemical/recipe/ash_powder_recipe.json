@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "minecraft:coals"
+    },
+    {
+      "tag": "alchemical:pestles"
+    }
+  ],
+  "result": {
+    "id": "alchemical:ash_powder",
+    "count": 1
+  }
+}

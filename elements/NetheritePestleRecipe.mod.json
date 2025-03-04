@@ -1,0 +1,28 @@
+{
+  "_fv": 73,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smithing",
+    "recipeRetstackSize": 1,
+    "group": "pestle",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "EQUIPMENT",
+    "recipeShapeless": false,
+    "smithingInputStack": {
+      "value": "CUSTOM:DiamondPestle"
+    },
+    "smithingInputAdditionStack": {
+      "value": "Items.NETHERITE_INGOT"
+    },
+    "smithingInputTemplateStack": {
+      "value": "Items.NETHERITE_UPGRADE"
+    },
+    "smithingReturnStack": {
+      "value": "CUSTOM:NetheritePestle"
+    },
+    "name": "netherite_pestle_recipe",
+    "namespace": "mod"
+  }
+}

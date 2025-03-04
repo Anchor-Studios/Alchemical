@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "alchemical:item/netherite_pestle"
+  }
+}
