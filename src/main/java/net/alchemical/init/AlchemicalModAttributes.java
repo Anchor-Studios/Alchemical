@@ -21,10 +21,12 @@ public class AlchemicalModAttributes {
 	public static final DeferredRegister<Attribute> REGISTRY = DeferredRegister.create(BuiltInRegistries.ATTRIBUTE, AlchemicalMod.MODID);
 	public static final DeferredHolder<Attribute, Attribute> BURNING_DURATION = REGISTRY.register("burning_duration", () -> new RangedAttribute("attribute.alchemical.burning_duration", 0, 0, 15).setSyncable(true));
 	public static final DeferredHolder<Attribute, Attribute> FREEZING_DURATION = REGISTRY.register("freezing_duration", () -> new RangedAttribute("attribute.alchemical.freezing_duration", 0, 0, 15).setSyncable(true));
+	public static final DeferredHolder<Attribute, Attribute> LIFESTEAL_PERCENTAGE = REGISTRY.register("lifesteal_percentage", () -> new RangedAttribute("attribute.alchemical.lifesteal_percentage", 0, 0, 100).setSyncable(true));
 
 	@SubscribeEvent
 	public static void addAttributes(EntityAttributeModificationEvent event) {
 		event.getTypes().forEach(entity -> event.add(entity, BURNING_DURATION));
 		event.getTypes().forEach(entity -> event.add(entity, FREEZING_DURATION));
+		event.getTypes().forEach(entity -> event.add(entity, LIFESTEAL_PERCENTAGE));
 	}
 }

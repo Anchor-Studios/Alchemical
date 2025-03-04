@@ -11,15 +11,15 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "brewingInputStack": {
-      "value": "POTION:CUSTOM:Resistance"
+      "value": "POTION:CUSTOM:Vampiric"
     },
     "brewingIngredientStack": {
       "value": "Items.REDSTONE"
     },
     "brewingReturnStack": {
-      "value": "POTION:CUSTOM:LongResistance"
+      "value": "POTION:CUSTOM:LongVampiric"
     },
-    "name": "long_resistance_recipe",
+    "name": "long_vampiric_recipe",
     "namespace": "mod"
   }
 }

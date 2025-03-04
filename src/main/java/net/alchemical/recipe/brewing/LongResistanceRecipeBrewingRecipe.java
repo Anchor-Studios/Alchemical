@@ -7,7 +7,6 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 
 import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.item.alchemy.Potions;
 import net.minecraft.world.item.alchemy.PotionContents;
 import net.minecraft.world.item.alchemy.Potion;
 import net.minecraft.world.item.Items;
@@ -31,7 +30,7 @@ public class LongResistanceRecipeBrewingRecipe implements IBrewingRecipe {
 	public boolean isInput(ItemStack input) {
 		Item inputItem = input.getItem();
 		Optional<Holder<Potion>> optionalPotion = input.getOrDefault(DataComponents.POTION_CONTENTS, PotionContents.EMPTY).potion();
-		return (inputItem == Items.POTION || inputItem == Items.SPLASH_POTION || inputItem == Items.LINGERING_POTION) && optionalPotion.isPresent() && optionalPotion.get().is(Potions.AWKWARD);
+		return (inputItem == Items.POTION || inputItem == Items.SPLASH_POTION || inputItem == Items.LINGERING_POTION) && optionalPotion.isPresent() && optionalPotion.get().is(AlchemicalModPotions.RESISTANCE);
 	}
 
 	@Override

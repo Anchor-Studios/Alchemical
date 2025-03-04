@@ -11,15 +11,15 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "brewingInputStack": {
-      "value": "POTION:CUSTOM:Resistance"
+      "value": "POTION:REGENERATION"
     },
     "brewingIngredientStack": {
-      "value": "Items.REDSTONE"
+      "value": "Blocks.RED_SHULKER_BOX"
     },
     "brewingReturnStack": {
-      "value": "POTION:CUSTOM:LongResistance"
+      "value": "POTION:CUSTOM:Vampiric"
     },
-    "name": "long_resistance_recipe",
+    "name": "vampiric_recipe",
     "namespace": "mod"
   }
 }

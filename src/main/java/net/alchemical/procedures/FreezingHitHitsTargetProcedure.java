@@ -8,7 +8,6 @@ import net.neoforged.bus.api.Event;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 
-import net.alchemical.init.AlchemicalModMobEffects;
 import net.alchemical.init.AlchemicalModAttributes;
 
 import javax.annotation.Nullable;
@@ -29,7 +28,7 @@ public class FreezingHitHitsTargetProcedure {
 	private static void execute(@Nullable Event event, Entity entity, Entity sourceentity) {
 		if (entity == null || sourceentity == null)
 			return;
-		if (sourceentity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(AlchemicalModMobEffects.FREEZING_HIT)) {
+		if ((sourceentity instanceof LivingEntity _livingEntity0 && _livingEntity0.getAttributes().hasAttribute(AlchemicalModAttributes.FREEZING_DURATION) ? _livingEntity0.getAttribute(AlchemicalModAttributes.FREEZING_DURATION).getValue() : 0) > 0) {
 			entity.setTicksFrozen((int) (entity.getTicksFrozen() + (sourceentity instanceof LivingEntity _livingEntity2 && _livingEntity2.getAttributes().hasAttribute(AlchemicalModAttributes.FREEZING_DURATION)
 					? _livingEntity2.getAttribute(AlchemicalModAttributes.FREEZING_DURATION).getValue()
 					: 0) * 20));

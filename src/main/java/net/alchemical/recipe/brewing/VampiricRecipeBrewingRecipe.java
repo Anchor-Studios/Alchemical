@@ -6,7 +6,9 @@ import net.neoforged.neoforge.common.brewing.IBrewingRecipe;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.alchemy.Potions;
 import net.minecraft.world.item.alchemy.PotionContents;
 import net.minecraft.world.item.alchemy.Potion;
 import net.minecraft.world.item.Items;
@@ -20,28 +22,28 @@ import net.alchemical.init.AlchemicalModPotions;
 import java.util.Optional;
 
 @EventBusSubscriber
-public class StrongResistanceRecipeBrewingRecipe implements IBrewingRecipe {
+public class VampiricRecipeBrewingRecipe implements IBrewingRecipe {
 	@SubscribeEvent
 	public static void init(RegisterBrewingRecipesEvent event) {
-		event.getBuilder().addRecipe(new StrongResistanceRecipeBrewingRecipe());
+		event.getBuilder().addRecipe(new VampiricRecipeBrewingRecipe());
 	}
 
 	@Override
 	public boolean isInput(ItemStack input) {
 		Item inputItem = input.getItem();
 		Optional<Holder<Potion>> optionalPotion = input.getOrDefault(DataComponents.POTION_CONTENTS, PotionContents.EMPTY).potion();
-		return (inputItem == Items.POTION || inputItem == Items.SPLASH_POTION || inputItem == Items.LINGERING_POTION) && optionalPotion.isPresent() && optionalPotion.get().is(AlchemicalModPotions.RESISTANCE);
+		return (inputItem == Items.POTION || inputItem == Items.SPLASH_POTION || inputItem == Items.LINGERING_POTION) && optionalPotion.isPresent() && optionalPotion.get().is(Potions.REGENERATION);
 	}
 
 	@Override
 	public boolean isIngredient(ItemStack ingredient) {
-		return Ingredient.of(new ItemStack(Items.GLOWSTONE_DUST)).test(ingredient);
+		return Ingredient.of(new ItemStack(Blocks.RED_SHULKER_BOX)).test(ingredient);
 	}
 
 	@Override
 	public ItemStack getOutput(ItemStack input, ItemStack ingredient) {
 		if (isInput(input) && isIngredient(ingredient)) {
-			return PotionContents.createItemStack(input.getItem(), AlchemicalModPotions.STRONG_RESISTANCE);
+			return PotionContents.createItemStack(input.getItem(), AlchemicalModPotions.VAMPIRIC);
 		}
 		return ItemStack.EMPTY;
 	}

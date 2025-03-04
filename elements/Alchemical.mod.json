@@ -1,0 +1,11 @@
+{
+  "_fv": 73,
+  "_type": "tab",
+  "definition": {
+    "name": "Alchemical",
+    "icon": {
+      "value": "CUSTOM:CrimsonPowder"
+    },
+    "showSearch": true
+  }
+}

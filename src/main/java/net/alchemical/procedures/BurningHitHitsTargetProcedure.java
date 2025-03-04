@@ -8,7 +8,6 @@ import net.neoforged.bus.api.Event;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 
-import net.alchemical.init.AlchemicalModMobEffects;
 import net.alchemical.init.AlchemicalModAttributes;
 
 import javax.annotation.Nullable;
@@ -29,7 +28,7 @@ public class BurningHitHitsTargetProcedure {
 	private static void execute(@Nullable Event event, Entity entity, Entity sourceentity) {
 		if (entity == null || sourceentity == null)
 			return;
-		if (sourceentity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(AlchemicalModMobEffects.BURNING_HIT)) {
+		if ((sourceentity instanceof LivingEntity _livingEntity0 && _livingEntity0.getAttributes().hasAttribute(AlchemicalModAttributes.BURNING_DURATION) ? _livingEntity0.getAttribute(AlchemicalModAttributes.BURNING_DURATION).getValue() : 0) > 0) {
 			entity.igniteForSeconds((int) (sourceentity instanceof LivingEntity _livingEntity1 && _livingEntity1.getAttributes().hasAttribute(AlchemicalModAttributes.BURNING_DURATION)
 					? _livingEntity1.getAttribute(AlchemicalModAttributes.BURNING_DURATION).getValue()
 					: 0));

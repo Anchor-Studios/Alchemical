@@ -11,7 +11,7 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "brewingInputStack": {
-      "value": "POTION:AWKWARD"
+      "value": "POTION:CUSTOM:Resistance"
     },
     "brewingIngredientStack": {
       "value": "Items.GLOWSTONE_DUST"

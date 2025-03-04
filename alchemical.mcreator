@@ -370,6 +370,150 @@
         ]
       },
       "path": "~/Recipes"
+    },
+    {
+      "name": "Lifesteal",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lifesteal",
+      "metadata": {
+        "files": [
+          "src/main/java/net/alchemical/potion/LifestealMobEffect.java"
+        ]
+      },
+      "path": "~/PotionEffects"
+    },
+    {
+      "name": "LifestealPercentage",
+      "type": "attribute",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lifesteal_percentage",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/PotionEffects"
+    },
+    {
+      "name": "Vampiric",
+      "type": "potion",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vampiric",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Potions"
+    },
+    {
+      "name": "LongVampiric",
+      "type": "potion",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "long_vampiric",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Potions"
+    },
+    {
+      "name": "StrongVampiric",
+      "type": "potion",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "strong_vampiric",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Potions"
+    },
+    {
+      "name": "LifestealHitHitsTarget",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lifesteal_hit_hits_target",
+      "metadata": {
+        "files": [
+          "src/main/java/net/alchemical/procedures/LifestealHitHitsTargetProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "amount",
+            "type": "number"
+          }
+        ]
+      },
+      "path": "~/PotionEffects"
+    },
+    {
+      "name": "VampiricRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vampiric_recipe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/alchemical/recipe/brewing/VampiricRecipeBrewingRecipe.java"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "LongVampiricRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "long_vampiric_recipe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/alchemical/recipe/brewing/LongVampiricRecipeBrewingRecipe.java"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "StrongVampiricRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "strong_vampiric_recipe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/alchemical/recipe/brewing/StrongVampiricRecipeBrewingRecipe.java"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "CrimsonPowder",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crimson_powder",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/alchemical/models/item/crimson_powder.json",
+          "src/main/java/net/alchemical/item/CrimsonPowderItem.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "Alchemical",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "alchemical",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/CreativeTabs"
     }
   ],
   "variable_elements": [],
@@ -385,6 +529,7 @@
       "item.minecraft.splash_potion.effect.iron_weight": "Splash Potion of Iron Weight",
       "item.minecraft.potion.effect.strong_iron_weight": "Potion of Iron Weight",
       "item.minecraft.potion.effect.long_resistance": "Potion of Resistance",
+      "item.minecraft.potion.effect.vampiric": "Vampiric Potion",
       "effect.alchemical.freezing_hit": "Freezing Hit",
       "item.minecraft.splash_potion.effect.long_fiery_blows": "Splash Potion of Fiery Blows",
       "item.minecraft.splash_potion.effect.resistance": "Splash Potion of Resistance",
@@ -392,29 +537,41 @@
       "item.minecraft.lingering_potion.effect.strong_iron_weight": "Lingering Potion of Iron Weight",
       "item.minecraft.tipped_arrow.effect.strong_iron_weight": "Arrow of Iron Weight",
       "item.minecraft.lingering_potion.effect.strong_resistance": "Lingering Potion of Resistance",
+      "item.minecraft.tipped_arrow.effect.long_vampiric": "Vampiric Arrow",
       "item.minecraft.lingering_potion.effect.long_icy_grasp": "Lingering Potion of Icy Grasp",
       "item.minecraft.tipped_arrow.effect.resistance": "Arrow of Resistance",
       "effect.alchemical.burning_hit": "Burning Hit",
       "item.minecraft.potion.effect.fiery_blows": "Potion of Fiery Blows",
       "item.minecraft.lingering_potion.effect.strong_fiery_blows": "Lingering Potion of Fiery Blows",
       "item.minecraft.splash_potion.effect.long_resistance": "Splash Potion of Resistance",
+      "item_group.alchemical.alchemical": "Alchemical",
       "item.minecraft.lingering_potion.effect.strong_icy_grasp": "Lingering Potion of Icy Grasp",
       "item.minecraft.splash_potion.effect.strong_iron_weight": "Splash Potion of Iron Weight",
+      "item.minecraft.lingering_potion.effect.long_vampiric": "Vampiric Lingering Potion",
       "attribute.alchemical.burning_duration": "Burning Duration",
       "item.minecraft.lingering_potion.effect.long_resistance": "Lingering Potion of Resistance",
       "item.minecraft.potion.effect.strong_resistance": "Potion of Resistance",
       "item.minecraft.tipped_arrow.effect.strong_icy_grasp": "Arrow of Icy Grasp",
+      "item.minecraft.splash_potion.effect.strong_vampiric": "Vampiric Splash Potion",
+      "item.minecraft.lingering_potion.effect.vampiric": "Vampiric Lingering Potion",
       "item.minecraft.lingering_potion.effect.fiery_blows": "Lingering Potion of Fiery Blows",
+      "item.minecraft.lingering_potion.effect.strong_vampiric": "Vampiric Lingering Potion",
       "item.minecraft.tipped_arrow.effect.strong_resistance": "Arrow of Resistance",
       "item.minecraft.potion.effect.strong_icy_grasp": "Potion of Icy Grasp",
       "item.minecraft.lingering_potion.effect.icy_grasp": "Lingering Potion of Icy Grasp",
       "item.minecraft.splash_potion.effect.strong_fiery_blows": "Splash Potion of Fiery Blows",
       "item.minecraft.splash_potion.effect.strong_icy_grasp": "Splash Potion of Icy Grasp",
+      "item.minecraft.splash_potion.effect.vampiric": "Vampiric Splash Potion",
+      "attribute.alchemical.lifesteal_percentage": "Lifesteal Percentage",
       "item.minecraft.lingering_potion.effect.resistance": "Lingering Potion of Resistance",
       "item.minecraft.lingering_potion.effect.iron_weight": "Lingering Potion of Iron Weight",
+      "item.minecraft.potion.effect.strong_vampiric": "Vampiric Potion",
       "attribute.alchemical.freezing_duration": "Freezing Duration",
       "item.minecraft.lingering_potion.effect.long_fiery_blows": "Lingering Potion of Fiery Blows",
+      "effect.alchemical.lifesteal": "Lifesteal",
+      "item.alchemical.crimson_powder": "Crimson Powder",
       "item.minecraft.splash_potion.effect.fiery_blows": "Splash Potion of Fiery Blows",
+      "item.minecraft.tipped_arrow.effect.vampiric": "Vampiric Arrow",
       "item.minecraft.potion.effect.strong_fiery_blows": "Potion of Fiery Blows",
       "item.minecraft.tipped_arrow.effect.icy_grasp": "Arrow of Icy Grasp",
       "item.minecraft.tipped_arrow.effect.iron_weight": "Arrow of Iron Weight",
@@ -423,6 +580,9 @@
       "item.minecraft.potion.effect.iron_weight": "Potion of Iron Weight",
       "effect.alchemical.heavy_body": "Heavy Body",
       "item.minecraft.potion.effect.resistance": "Potion of Resistance",
+      "item.minecraft.potion.effect.long_vampiric": "Vampiric Potion",
+      "item.minecraft.splash_potion.effect.long_vampiric": "Vampiric Splash Potion",
+      "item.minecraft.tipped_arrow.effect.strong_vampiric": "Vampiric Arrow",
       "item.minecraft.tipped_arrow.effect.strong_fiery_blows": "Arrow of Fiery Blows",
       "item.minecraft.potion.effect.long_fiery_blows": "Potion of Fiery Blows",
       "item.minecraft.tipped_arrow.effect.fiery_blows": "Arrow of Fiery Blows",
@@ -443,21 +603,31 @@
       {
         "name": "Recipes",
         "children": []
+      },
+      {
+        "name": "Items",
+        "children": []
+      },
+      {
+        "name": "CreativeTabs",
+        "children": []
       }
     ]
   },
   "workspaceSettings": {
     "modid": "alchemical",
     "modName": "Alchemical",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "author": "Vuserr",
     "websiteURL": "https://mcreator.net",
     "license": "All Rights Reserved",
-    "serverSideOnly": false,
+    "serverSideOnly": true,
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
-    "mcreatorDependencies": [],
+    "mcreatorDependencies": [
+      "jei"
+    ],
     "currentGenerator": "neoforge-1.21.1",
     "credits": "Made by Vuserr",
     "modElementsPackage": "net.alchemical"

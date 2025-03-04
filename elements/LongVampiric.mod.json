@@ -1,0 +1,22 @@
+{
+  "_fv": 73,
+  "_type": "potion",
+  "definition": {
+    "potionName": "Vampiric Potion",
+    "splashName": "Vampiric Splash Potion",
+    "lingeringName": "Vampiric Lingering Potion",
+    "arrowName": "Vampiric Arrow",
+    "effects": [
+      {
+        "effect": {
+          "value": "CUSTOM:Lifesteal"
+        },
+        "duration": 2900,
+        "infinite": false,
+        "amplifier": 0,
+        "ambient": false,
+        "showParticles": true
+      }
+    ]
+  }
+}

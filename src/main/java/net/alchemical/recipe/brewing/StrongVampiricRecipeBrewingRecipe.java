@@ -20,17 +20,17 @@ import net.alchemical.init.AlchemicalModPotions;
 import java.util.Optional;
 
 @EventBusSubscriber
-public class StrongResistanceRecipeBrewingRecipe implements IBrewingRecipe {
+public class StrongVampiricRecipeBrewingRecipe implements IBrewingRecipe {
 	@SubscribeEvent
 	public static void init(RegisterBrewingRecipesEvent event) {
-		event.getBuilder().addRecipe(new StrongResistanceRecipeBrewingRecipe());
+		event.getBuilder().addRecipe(new StrongVampiricRecipeBrewingRecipe());
 	}
 
 	@Override
 	public boolean isInput(ItemStack input) {
 		Item inputItem = input.getItem();
 		Optional<Holder<Potion>> optionalPotion = input.getOrDefault(DataComponents.POTION_CONTENTS, PotionContents.EMPTY).potion();
-		return (inputItem == Items.POTION || inputItem == Items.SPLASH_POTION || inputItem == Items.LINGERING_POTION) && optionalPotion.isPresent() && optionalPotion.get().is(AlchemicalModPotions.RESISTANCE);
+		return (inputItem == Items.POTION || inputItem == Items.SPLASH_POTION || inputItem == Items.LINGERING_POTION) && optionalPotion.isPresent() && optionalPotion.get().is(AlchemicalModPotions.VAMPIRIC);
 	}
 
 	@Override
@@ -41,7 +41,7 @@ public class StrongResistanceRecipeBrewingRecipe implements IBrewingRecipe {
 	@Override
 	public ItemStack getOutput(ItemStack input, ItemStack ingredient) {
 		if (isInput(input) && isIngredient(ingredient)) {
-			return PotionContents.createItemStack(input.getItem(), AlchemicalModPotions.STRONG_RESISTANCE);
+			return PotionContents.createItemStack(input.getItem(), AlchemicalModPotions.STRONG_VAMPIRIC);
 		}
 		return ItemStack.EMPTY;
 	}
