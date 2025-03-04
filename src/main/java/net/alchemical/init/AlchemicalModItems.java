@@ -6,8 +6,11 @@ package net.alchemical.init;
 
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.registries.DeferredItem;
+import net.neoforged.neoforge.registries.DeferredHolder;
 
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.BlockItem;
 
 import net.alchemical.item.WoodenPestleItem;
 import net.alchemical.item.StonePestleItem;
@@ -29,6 +32,11 @@ public class AlchemicalModItems {
 	public static final DeferredItem<Item> DIAMOND_PESTLE = REGISTRY.register("diamond_pestle", DiamondPestleItem::new);
 	public static final DeferredItem<Item> NETHERITE_PESTLE = REGISTRY.register("netherite_pestle", NetheritePestleItem::new);
 	public static final DeferredItem<Item> ASH_POWDER = REGISTRY.register("ash_powder", AshPowderItem::new);
+	public static final DeferredItem<Item> ALCHEMY_STAND = block(AlchemicalModBlocks.ALCHEMY_STAND);
+
 	// Start of user code block custom items
 	// End of user code block custom items
+	private static DeferredItem<Item> block(DeferredHolder<Block, Block> block) {
+		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));
+	}
 }

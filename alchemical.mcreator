@@ -534,6 +534,38 @@
         ]
       },
       "path": "~/Recipes/PestleRecipes"
+    },
+    {
+      "name": "AlchemyStand",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "alchemy_stand",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/alchemical/models/item/alchemy_stand.json",
+          "src/main/java/net/alchemical/block/entity/AlchemyStandBlockEntity.java",
+          "src/main/resources/data/alchemical/loot_table/blocks/alchemy_stand.json",
+          "src/main/resources/assets/alchemical/models/block/alchemy_stand.json",
+          "src/main/java/net/alchemical/block/AlchemyStandBlock.java",
+          "src/main/resources/assets/alchemical/blockstates/alchemy_stand.json"
+        ]
+      },
+      "path": "~/Blocks/AlchemyStand"
+    },
+    {
+      "name": "AlchemyStandRecipe",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "alchemy_stand_recipe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/alchemical/world/inventory/AlchemyStandRecipeMenu.java",
+          "src/main/java/net/alchemical/client/gui/AlchemyStandRecipeScreen.java"
+        ]
+      },
+      "path": "~/Blocks/AlchemyStand"
     }
   ],
   "variable_elements": [],
@@ -545,11 +577,21 @@
       "Blocks.RED_FLOWER#0",
       "Blocks.RED_FLOWER#4"
     ],
+    "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:AlchemyStand"
+    ],
     "ITEMS:minecraft:brewable": [
       "CUSTOM:CrimsonPowder",
       "CUSTOM:AshPowder"
     ],
-    "ITEMS:minecraft:stone_crafting_materials": [],
+    "ITEMS:minecraft:pickaxes": [
+      "~CUSTOM:NetheritePestle",
+      "~CUSTOM:DiamondPestle",
+      "~CUSTOM:GoldenPestle",
+      "~CUSTOM:IronPestle",
+      "~CUSTOM:StonePestle",
+      "~CUSTOM:WoodenPestle"
+    ],
     "ITEMS:mod:pestles": [
       "CUSTOM:WoodenPestle",
       "CUSTOM:StonePestle",
@@ -557,8 +599,7 @@
       "CUSTOM:GoldenPestle",
       "CUSTOM:DiamondPestle",
       "CUSTOM:NetheritePestle"
-    ],
-    "ITEMS:minecraft:coals": []
+    ]
   },
   "tab_element_order": {
     "CUSTOM:Alchemical": [
@@ -569,20 +610,21 @@
       "DiamondPestle",
       "NetheritePestle",
       "CrimsonPowder",
-      "AshPowder"
+      "AshPowder",
+      "AlchemyStand"
     ]
   },
   "language_map": {
     "en_us": {
       "item.minecraft.potion.effect.icy_grasp": "Potion of Icy Grasp",
-      "item.minecraft.tipped_arrow.effect.long_icy_grasp": "Arrow of Icy Grasp",
-      "item.minecraft.potion.effect.long_icy_grasp": "Potion of Icy Grasp",
-      "item.minecraft.tipped_arrow.effect.long_fiery_blows": "Arrow of Fiery Blows",
-      "item.minecraft.splash_potion.effect.iron_weight": "Splash Potion of Iron Weight",
-      "item.minecraft.potion.effect.strong_iron_weight": "Potion of Iron Weight",
       "item.minecraft.potion.effect.long_resistance": "Potion of Resistance",
-      "item.minecraft.potion.effect.vampiric": "Vampiric Potion",
+      "item.minecraft.potion.effect.strong_iron_weight": "Potion of Iron Weight",
+      "item.minecraft.splash_potion.effect.iron_weight": "Splash Potion of Iron Weight",
+      "item.minecraft.tipped_arrow.effect.long_fiery_blows": "Arrow of Fiery Blows",
+      "item.minecraft.potion.effect.long_icy_grasp": "Potion of Icy Grasp",
+      "item.minecraft.tipped_arrow.effect.long_icy_grasp": "Arrow of Icy Grasp",
       "effect.alchemical.freezing_hit": "Freezing Hit",
+      "item.minecraft.potion.effect.vampiric": "Vampiric Potion",
       "item.minecraft.splash_potion.effect.long_fiery_blows": "Splash Potion of Fiery Blows",
       "item.minecraft.splash_potion.effect.resistance": "Splash Potion of Resistance",
       "item.minecraft.splash_potion.effect.icy_grasp": "Splash Potion of Icy Grasp",
@@ -594,6 +636,7 @@
       "item.minecraft.tipped_arrow.effect.resistance": "Arrow of Resistance",
       "item.alchemical.diamond_pestle": "Diamond Pestle",
       "effect.alchemical.burning_hit": "Burning Hit",
+      "block.alchemical.alchemy_stand": "Alchemy Stand",
       "item.alchemical.iron_pestle": "Iron Pestle",
       "item.minecraft.potion.effect.fiery_blows": "Potion of Fiery Blows",
       "item.minecraft.lingering_potion.effect.strong_fiery_blows": "Lingering Potion of Fiery Blows",
@@ -608,6 +651,7 @@
       "item.minecraft.potion.effect.strong_resistance": "Potion of Resistance",
       "item.minecraft.tipped_arrow.effect.strong_icy_grasp": "Arrow of Icy Grasp",
       "item.minecraft.splash_potion.effect.strong_vampiric": "Vampiric Splash Potion",
+      "gui.alchemical.alchemy_stand_recipe.label_inventory": "Inventory",
       "item.minecraft.lingering_potion.effect.vampiric": "Vampiric Lingering Potion",
       "item.alchemical.netherite_pestle": "Netherite Pestle",
       "item.minecraft.lingering_potion.effect.fiery_blows": "Lingering Potion of Fiery Blows",
@@ -638,6 +682,7 @@
       "effect.alchemical.heavy_body": "Heavy Body",
       "item.minecraft.potion.effect.resistance": "Potion of Resistance",
       "item.minecraft.potion.effect.long_vampiric": "Vampiric Potion",
+      "gui.alchemical.alchemy_stand_recipe.label_alchemy_stand": "Alchemy Stand",
       "item.alchemical.stone_pestle": "Stone Pestle",
       "item.alchemical.ash_powder": "Ash Powder",
       "item.minecraft.splash_potion.effect.long_vampiric": "Vampiric Splash Potion",
@@ -688,13 +733,22 @@
       {
         "name": "Tools",
         "children": []
+      },
+      {
+        "name": "Blocks",
+        "children": [
+          {
+            "name": "AlchemyStand",
+            "children": []
+          }
+        ]
       }
     ]
   },
   "workspaceSettings": {
     "modid": "alchemical",
     "modName": "Alchemical",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "author": "Vuserr",
     "websiteURL": "https://mcreator.net",
     "license": "All Rights Reserved",
@@ -702,7 +756,9 @@
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
-    "mcreatorDependencies": [],
+    "mcreatorDependencies": [
+      "jei"
+    ],
     "currentGenerator": "neoforge-1.21.1",
     "credits": "Made by Vuserr",
     "modElementsPackage": "net.alchemical"

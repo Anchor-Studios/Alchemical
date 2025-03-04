@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "alchemical:block/alchemy_stand"
+    },
+    "facing=east": {
+      "model": "alchemical:block/alchemy_stand",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "alchemical:block/alchemy_stand",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "alchemical:block/alchemy_stand",
+      "y": 270
+    }
+  }
+}

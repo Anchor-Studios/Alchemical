@@ -21,7 +21,10 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.alchemical.init.AlchemicalModTabs;
 import net.alchemical.init.AlchemicalModPotions;
 import net.alchemical.init.AlchemicalModMobEffects;
+import net.alchemical.init.AlchemicalModMenus;
 import net.alchemical.init.AlchemicalModItems;
+import net.alchemical.init.AlchemicalModBlocks;
+import net.alchemical.init.AlchemicalModBlockEntities;
 import net.alchemical.init.AlchemicalModAttributes;
 
 import java.util.concurrent.ConcurrentLinkedQueue;
@@ -42,12 +45,15 @@ public class AlchemicalMod {
 		NeoForge.EVENT_BUS.register(this);
 		modEventBus.addListener(this::registerNetworking);
 
+		AlchemicalModBlocks.REGISTRY.register(modEventBus);
+		AlchemicalModBlockEntities.REGISTRY.register(modEventBus);
 		AlchemicalModItems.REGISTRY.register(modEventBus);
 
 		AlchemicalModTabs.REGISTRY.register(modEventBus);
 
 		AlchemicalModPotions.REGISTRY.register(modEventBus);
 		AlchemicalModMobEffects.REGISTRY.register(modEventBus);
+		AlchemicalModMenus.REGISTRY.register(modEventBus);
 
 		AlchemicalModAttributes.REGISTRY.register(modEventBus);
 		// Start of user code block mod init

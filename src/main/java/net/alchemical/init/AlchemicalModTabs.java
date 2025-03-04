@@ -31,6 +31,7 @@ public class AlchemicalModTabs {
 				tabData.accept(AlchemicalModItems.NETHERITE_PESTLE.get());
 				tabData.accept(AlchemicalModItems.CRIMSON_POWDER.get());
 				tabData.accept(AlchemicalModItems.ASH_POWDER.get());
+				tabData.accept(AlchemicalModBlocks.ALCHEMY_STAND.get().asItem());
 			}).withSearchBar().build());
 
 	@SubscribeEvent
@@ -45,6 +46,8 @@ public class AlchemicalModTabs {
 			tabData.accept(AlchemicalModItems.GOLDEN_PESTLE.get());
 			tabData.accept(AlchemicalModItems.DIAMOND_PESTLE.get());
 			tabData.accept(AlchemicalModItems.NETHERITE_PESTLE.get());
+		} else if (tabData.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
+			tabData.accept(AlchemicalModBlocks.ALCHEMY_STAND.get().asItem());
 		}
 	}
 }
