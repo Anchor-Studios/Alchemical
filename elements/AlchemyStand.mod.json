@@ -115,12 +115,16 @@
     "vanillaToolTier": "NONE",
     "isBonemealable": false,
     "hasInventory": true,
+    "guiBoundTo": "AlchemyStandRecipe",
     "openGUIOnRightClick": true,
-    "inventorySize": 9,
+    "inventorySize": 5,
     "inventoryStackSize": 64,
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": true,
-    "inventoryOutSlotIDs": [],
+    "inventoryOutSlotIDs": [
+      3,
+      4
+    ],
     "inventoryInSlotIDs": [],
     "hasEnergyStorage": false,
     "energyInitial": 0,

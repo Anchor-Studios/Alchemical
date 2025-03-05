@@ -51,6 +51,14 @@ public class AlchemyStandRecipeScreen extends AbstractContainerScreen<AlchemySta
 
 		guiGraphics.blit(ResourceLocation.parse("alchemical:textures/screens/powder_slot.png"), this.leftPos + 148, this.topPos + 56, 0, 0, 16, 16, 16, 16);
 
+		guiGraphics.blit(ResourceLocation.parse("alchemical:textures/screens/arrow_right.png"), this.leftPos + 64, this.topPos + 37, 0, 0, 26, 8, 26, 8);
+
+		guiGraphics.blit(ResourceLocation.parse("alchemical:textures/screens/plus.png"), this.leftPos + 33, this.topPos + 37, 0, 0, 7, 8, 7, 8);
+
+		guiGraphics.blit(ResourceLocation.parse("alchemical:textures/screens/potion_slot.png"), this.leftPos + 13, this.topPos + 33, 0, 0, 16, 16, 16, 16);
+
+		guiGraphics.blit(ResourceLocation.parse("alchemical:textures/screens/redstone_place.png"), this.leftPos + 44, this.topPos + 33, 0, 0, 16, 16, 16, 16);
+
 		RenderSystem.disableBlend();
 	}
 
