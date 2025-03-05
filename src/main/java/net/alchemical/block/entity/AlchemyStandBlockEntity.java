@@ -106,8 +106,6 @@ public class AlchemyStandBlockEntity extends RandomizableContainerBlockEntity im
 
 	@Override
 	public boolean canPlaceItem(int index, ItemStack stack) {
-		if (index == 3)
-			return false;
 		if (index == 4)
 			return false;
 		return true;

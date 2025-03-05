@@ -7,6 +7,7 @@ import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.level.material.FluidState;
+import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
@@ -38,6 +39,7 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 import net.alchemical.world.inventory.AlchemyStandRecipeMenu;
+import net.alchemical.procedures.AlchemyStandBlockAddedProcedure;
 import net.alchemical.block.entity.AlchemyStandBlockEntity;
 
 import io.netty.buffer.Unpooled;
@@ -45,11 +47,11 @@ import io.netty.buffer.Unpooled;
 public class AlchemyStandBlock extends Block implements SimpleWaterloggedBlock, EntityBlock {
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 	public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
-	public static final BooleanProperty POTION = BooleanProperty.create("potion");
+	public static final IntegerProperty DONE = IntegerProperty.create("done", 0, 100);
 
 	public AlchemyStandBlock() {
 		super(BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(1.4f, 16f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
-		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(POTION, false).setValue(WATERLOGGED, false));
+		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(DONE, 0).setValue(WATERLOGGED, false));
 	}
 
 	@Override
@@ -70,13 +72,13 @@ public class AlchemyStandBlock extends Block implements SimpleWaterloggedBlock, 
 	@Override
 	protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
 		super.createBlockStateDefinition(builder);
-		builder.add(FACING, POTION, WATERLOGGED);
+		builder.add(FACING, DONE, WATERLOGGED);
 	}
 
 	@Override
 	public BlockState getStateForPlacement(BlockPlaceContext context) {
 		boolean flag = context.getLevel().getFluidState(context.getClickedPos()).getType() == Fluids.WATER;
-		return super.getStateForPlacement(context).setValue(FACING, context.getHorizontalDirection().getOpposite()).setValue(POTION, false).setValue(WATERLOGGED, flag);
+		return super.getStateForPlacement(context).setValue(FACING, context.getHorizontalDirection().getOpposite()).setValue(DONE, 0).setValue(WATERLOGGED, flag);
 	}
 
 	public BlockState rotate(BlockState state, Rotation rot) {
@@ -98,6 +100,12 @@ public class AlchemyStandBlock extends Block implements SimpleWaterloggedBlock, 
 			world.scheduleTick(currentPos, Fluids.WATER, Fluids.WATER.getTickDelay(world));
 		}
 		return super.updateShape(state, facing, facingState, world, currentPos, facingPos);
+	}
+
+	@Override
+	public void onPlace(BlockState blockstate, Level world, BlockPos pos, BlockState oldState, boolean moving) {
+		super.onPlace(blockstate, world, pos, oldState, moving);
+		AlchemyStandBlockAddedProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 	}
 
 	@Override

@@ -87,17 +87,17 @@ public class AlchemyStandRecipeMenu extends AbstractContainerMenu implements Sup
 			private int x = AlchemyStandRecipeMenu.this.x;
 			private int y = AlchemyStandRecipeMenu.this.y;
 		}));
-		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 13, 33) {
+		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 8, 28) {
 			private final int slot = 1;
 			private int x = AlchemyStandRecipeMenu.this.x;
 			private int y = AlchemyStandRecipeMenu.this.y;
 		}));
-		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 44, 33) {
+		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 56, 28) {
 			private final int slot = 2;
 			private int x = AlchemyStandRecipeMenu.this.x;
 			private int y = AlchemyStandRecipeMenu.this.y;
 		}));
-		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 94, 33) {
+		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 32, 47) {
 			private final int slot = 3;
 			private int x = AlchemyStandRecipeMenu.this.x;
 			private int y = AlchemyStandRecipeMenu.this.y;
@@ -107,7 +107,7 @@ public class AlchemyStandRecipeMenu extends AbstractContainerMenu implements Sup
 				return false;
 			}
 		}));
-		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 112, 33) {
+		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 112, 28) {
 			private final int slot = 4;
 			private int x = AlchemyStandRecipeMenu.this.x;
 			private int y = AlchemyStandRecipeMenu.this.y;

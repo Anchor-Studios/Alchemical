@@ -95,8 +95,8 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "x": 138,
-          "y": 69,
+          "x": 133,
+          "y": 64,
           "locked": false
         }
       },
@@ -114,8 +114,8 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "x": 169,
-          "y": 69,
+          "x": 181,
+          "y": 64,
           "locked": false
         }
       },
@@ -127,8 +127,8 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "x": 219,
-          "y": 69,
+          "x": 157,
+          "y": 83,
           "locked": false
         }
       },
@@ -137,8 +137,11 @@
         "data": {
           "image": "arrow_right.png",
           "use1Xscale": false,
-          "x": 190,
-          "y": 74,
+          "displayCondition": {
+            "name": "CraftArrow1"
+          },
+          "x": 205,
+          "y": 69,
           "locked": false
         }
       },
@@ -147,18 +150,8 @@
         "data": {
           "image": "plus.png",
           "use1Xscale": false,
-          "x": 159,
-          "y": 74,
-          "locked": false
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "potion_slot.png",
-          "use1Xscale": false,
-          "x": 139,
-          "y": 70,
+          "x": 162,
+          "y": 69,
           "locked": false
         }
       },
@@ -167,8 +160,8 @@
         "data": {
           "image": "redstone_place.png",
           "use1Xscale": false,
-          "x": 170,
-          "y": 70,
+          "x": 158,
+          "y": 84,
           "locked": false
         }
       },
@@ -181,6 +174,344 @@
           },
           "dropItemsWhenNotBound": true,
           "x": 237,
+          "y": 64,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow1.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "CraftArrow2"
+          },
+          "x": 205,
+          "y": 69,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "CraftArrow3"
+          },
+          "x": 205,
+          "y": 69,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow3.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "CraftArrow4"
+          },
+          "x": 205,
+          "y": 69,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow4.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "CraftArrow5"
+          },
+          "x": 205,
+          "y": 69,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow5.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "CraftArrow6"
+          },
+          "x": 205,
+          "y": 69,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow6.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "CraftArrow7"
+          },
+          "x": 205,
+          "y": 69,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow7.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "CraftArrow8"
+          },
+          "x": 205,
+          "y": 69,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow8.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "CraftArrow9"
+          },
+          "x": 205,
+          "y": 69,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow9.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "CraftArrow91"
+          },
+          "x": 205,
+          "y": 69,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow91.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "CraftArrow92"
+          },
+          "x": 205,
+          "y": 69,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow92.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "CraftArrow93"
+          },
+          "x": 205,
+          "y": 69,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow93.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "CraftArrow94"
+          },
+          "x": 205,
+          "y": 69,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow94.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "CraftArrow95"
+          },
+          "x": 205,
+          "y": 69,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow95.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "CraftArrow96"
+          },
+          "x": 205,
+          "y": 69,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow96.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "CraftArrow97"
+          },
+          "x": 205,
+          "y": 69,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow97.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "CraftArrow98"
+          },
+          "x": 205,
+          "y": 69,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow98.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "CraftArrow99"
+          },
+          "x": 205,
+          "y": 69,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow99.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "CraftArrow991"
+          },
+          "x": 205,
+          "y": 69,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow991.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "CraftArrow992"
+          },
+          "x": 205,
+          "y": 69,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow992.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "CraftArrow993"
+          },
+          "x": 205,
+          "y": 69,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow993.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "CraftArrow994"
+          },
+          "x": 205,
+          "y": 69,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow994.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "CraftArrow995"
+          },
+          "x": 205,
+          "y": 69,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow995.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "CraftArrow996"
+          },
+          "x": 205,
+          "y": 69,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow996.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "CraftArrow997"
+          },
+          "x": 205,
+          "y": 69,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow997.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "CraftArrow998"
+          },
+          "x": 205,
+          "y": 69,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow998.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "CraftArrow999"
+          },
+          "x": 205,
           "y": 69,
           "locked": false
         }

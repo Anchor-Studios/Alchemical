@@ -316,8 +316,8 @@
       "registry_name": "crimson_powder",
       "metadata": {
         "files": [
-          "src/main/resources/assets/alchemical/models/item/crimson_powder.json",
-          "src/main/java/net/alchemical/item/CrimsonPowderItem.java"
+          "src/main/java/net/alchemical/item/CrimsonPowderItem.java",
+          "src/main/resources/assets/alchemical/models/item/crimson_powder.json"
         ]
       },
       "path": "~/Items"
@@ -369,8 +369,8 @@
       "registry_name": "iron_pestle",
       "metadata": {
         "files": [
-          "src/main/java/net/alchemical/item/IronPestleItem.java",
-          "src/main/resources/assets/alchemical/models/item/iron_pestle.json"
+          "src/main/resources/assets/alchemical/models/item/iron_pestle.json",
+          "src/main/java/net/alchemical/item/IronPestleItem.java"
         ]
       },
       "path": "~/Tools"
@@ -397,8 +397,8 @@
       "registry_name": "diamond_pestle",
       "metadata": {
         "files": [
-          "src/main/resources/assets/alchemical/models/item/diamond_pestle.json",
-          "src/main/java/net/alchemical/item/DiamondPestleItem.java"
+          "src/main/java/net/alchemical/item/DiamondPestleItem.java",
+          "src/main/resources/assets/alchemical/models/item/diamond_pestle.json"
         ]
       },
       "path": "~/Tools"
@@ -516,8 +516,8 @@
       "registry_name": "ash_powder",
       "metadata": {
         "files": [
-          "src/main/resources/assets/alchemical/models/item/ash_powder.json",
-          "src/main/java/net/alchemical/item/AshPowderItem.java"
+          "src/main/java/net/alchemical/item/AshPowderItem.java",
+          "src/main/resources/assets/alchemical/models/item/ash_powder.json"
         ]
       },
       "path": "~/Items"
@@ -544,11 +544,11 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/alchemical/models/item/alchemy_stand.json",
-          "src/main/java/net/alchemical/block/entity/AlchemyStandBlockEntity.java",
-          "src/main/resources/data/alchemical/loot_table/blocks/alchemy_stand.json",
           "src/main/resources/assets/alchemical/models/block/alchemy_stand.json",
+          "src/main/resources/assets/alchemical/blockstates/alchemy_stand.json",
           "src/main/java/net/alchemical/block/AlchemyStandBlock.java",
-          "src/main/resources/assets/alchemical/blockstates/alchemy_stand.json"
+          "src/main/resources/data/alchemical/loot_table/blocks/alchemy_stand.json",
+          "src/main/java/net/alchemical/block/entity/AlchemyStandBlockEntity.java"
         ]
       },
       "path": "~/Blocks/AlchemyStand"
@@ -566,6 +566,915 @@
         ]
       },
       "path": "~/Blocks/AlchemyStand"
+    },
+    {
+      "name": "CraftArrow1",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_arrow_1",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/alchemical/procedures/CraftArrow1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/AlchemyStand/craftarrowprocedures"
+    },
+    {
+      "name": "CraftArrow2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_arrow_2",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/alchemical/procedures/CraftArrow2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/AlchemyStand/craftarrowprocedures"
+    },
+    {
+      "name": "CraftArrow3",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_arrow_3",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/alchemical/procedures/CraftArrow3Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/AlchemyStand/craftarrowprocedures"
+    },
+    {
+      "name": "CraftArrow4",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_arrow_4",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/alchemical/procedures/CraftArrow4Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/AlchemyStand/craftarrowprocedures"
+    },
+    {
+      "name": "CraftArrow5",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_arrow_5",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/alchemical/procedures/CraftArrow5Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/AlchemyStand/craftarrowprocedures"
+    },
+    {
+      "name": "CraftArrow6",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_arrow_6",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/alchemical/procedures/CraftArrow6Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/AlchemyStand/craftarrowprocedures"
+    },
+    {
+      "name": "CraftArrow7",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_arrow_7",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/alchemical/procedures/CraftArrow7Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/AlchemyStand/craftarrowprocedures"
+    },
+    {
+      "name": "CraftArrow8",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_arrow_8",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/alchemical/procedures/CraftArrow8Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/AlchemyStand/craftarrowprocedures"
+    },
+    {
+      "name": "CraftArrow9",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_arrow_9",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/alchemical/procedures/CraftArrow9Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/AlchemyStand/craftarrowprocedures"
+    },
+    {
+      "name": "CraftArrow91",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_arrow_91",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/alchemical/procedures/CraftArrow91Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/AlchemyStand/craftarrowprocedures"
+    },
+    {
+      "name": "CraftArrow92",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_arrow_92",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/alchemical/procedures/CraftArrow92Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/AlchemyStand/craftarrowprocedures"
+    },
+    {
+      "name": "CraftArrow93",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_arrow_93",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/alchemical/procedures/CraftArrow93Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/AlchemyStand/craftarrowprocedures"
+    },
+    {
+      "name": "CraftArrow94",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_arrow_94",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/alchemical/procedures/CraftArrow94Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/AlchemyStand/craftarrowprocedures"
+    },
+    {
+      "name": "CraftArrow95",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_arrow_95",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/alchemical/procedures/CraftArrow95Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/AlchemyStand/craftarrowprocedures"
+    },
+    {
+      "name": "CraftArrow96",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_arrow_96",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/alchemical/procedures/CraftArrow96Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/AlchemyStand/craftarrowprocedures"
+    },
+    {
+      "name": "CraftArrow97",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_arrow_97",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/alchemical/procedures/CraftArrow97Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/AlchemyStand/craftarrowprocedures"
+    },
+    {
+      "name": "CraftArrow98",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_arrow_98",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/alchemical/procedures/CraftArrow98Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/AlchemyStand/craftarrowprocedures"
+    },
+    {
+      "name": "CraftArrow99",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_arrow_99",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/alchemical/procedures/CraftArrow99Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/AlchemyStand/craftarrowprocedures"
+    },
+    {
+      "name": "CraftArrow991",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_arrow_991",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/alchemical/procedures/CraftArrow991Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/AlchemyStand/craftarrowprocedures"
+    },
+    {
+      "name": "CraftArrow992",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_arrow_992",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/alchemical/procedures/CraftArrow992Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/AlchemyStand/craftarrowprocedures"
+    },
+    {
+      "name": "CraftArrow993",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_arrow_993",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/alchemical/procedures/CraftArrow993Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/AlchemyStand/craftarrowprocedures"
+    },
+    {
+      "name": "CraftArrow994",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_arrow_994",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/alchemical/procedures/CraftArrow994Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/AlchemyStand/craftarrowprocedures"
+    },
+    {
+      "name": "CraftArrow995",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_arrow_995",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/alchemical/procedures/CraftArrow995Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/AlchemyStand/craftarrowprocedures"
+    },
+    {
+      "name": "CraftArrow996",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_arrow_996",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/alchemical/procedures/CraftArrow996Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/AlchemyStand/craftarrowprocedures"
+    },
+    {
+      "name": "CraftArrow997",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_arrow_997",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/alchemical/procedures/CraftArrow997Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/AlchemyStand/craftarrowprocedures"
+    },
+    {
+      "name": "CraftArrow998",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_arrow_998",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/alchemical/procedures/CraftArrow998Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/AlchemyStand/craftarrowprocedures"
+    },
+    {
+      "name": "CraftArrow999",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_arrow_999",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/alchemical/procedures/CraftArrow999Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/AlchemyStand/craftarrowprocedures"
+    },
+    {
+      "name": "AlchemyStandBlockAdded",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "alchemy_stand_block_added",
+      "metadata": {
+        "files": [
+          "src/main/java/net/alchemical/procedures/AlchemyStandBlockAddedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/AlchemyStand"
+    },
+    {
+      "name": "Alchemy",
+      "type": "jeirecipetype",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "alchemy",
+      "metadata": {
+        "files": [
+          "src/main/java/net/alchemical/jei_recipes/AlchemyRecipeCategory.java",
+          "src/main/java/net/alchemical/jei_recipes/AlchemyRecipe.java"
+        ]
+      },
+      "path": "~/Blocks/AlchemyStand/jei"
     }
   ],
   "variable_elements": [],
@@ -739,7 +1648,16 @@
         "children": [
           {
             "name": "AlchemyStand",
-            "children": []
+            "children": [
+              {
+                "name": "craftarrowprocedures",
+                "children": []
+              },
+              {
+                "name": "jei",
+                "children": []
+              }
+            ]
           }
         ]
       }
@@ -748,7 +1666,7 @@
   "workspaceSettings": {
     "modid": "alchemical",
     "modName": "Alchemical",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "author": "Vuserr",
     "websiteURL": "https://mcreator.net",
     "license": "All Rights Reserved",

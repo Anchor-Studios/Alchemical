@@ -35,9 +35,11 @@
     ],
     "customProperties": [
       {
-        "name": "CUSTOM:potion",
-        "type": "logic",
-        "value": false
+        "min": 0,
+        "max": 100,
+        "name": "CUSTOM:done",
+        "type": "integer",
+        "value": 0
       }
     ],
     "name": "Alchemy Stand",
@@ -122,7 +124,6 @@
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": true,
     "inventoryOutSlotIDs": [
-      3,
       4
     ],
     "inventoryInSlotIDs": [],
@@ -134,6 +135,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onBlockAdded": {
+      "name": "AlchemyStandBlockAdded"
+    },
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [
